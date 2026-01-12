@@ -1,18 +1,16 @@
-# Dark Mode For AHK-v2
-A test script for an AutoHotkey Dark Mode script by [jNizM](https://www.autohotkey.com/boards/memberlist.php?mode=viewprofile&u=75">jNizM) and slightly modified by me. The original unmodified version is available at [THIS LINK](https://www.autohotkey.com/boards/viewtopic.php?t=115952). For those confused, The script you want is DarkMode.scriptlet and it's intended to be ran via the `#Include` function. If you're STILL confused, A demo script is provided.
+# Dark Mode For AHK-v2 ([AutoHotkey](https://github.com/AutoHotkey/AutoHotkey))
 
-# Build requirements
-[AutoHotkey (v2)](https://github.com/AutoHotkey/AutoHotkey)
+This is an AutoHotkey "scriptlet" for applying a dark theme to AHK GUIs via the Win32 API. It was originally created by [jNizM](https://www.autohotkey.com/boards/memberlist.php?mode=viewprofile&u=75) (available [here](https://www.autohotkey.com/boards/viewtopic.php?t=115952)) and then revised by pikakid98.
 
-Additional requirements if you decide to compile the demo script
+The relevant file is [DarkMode.ahk](DarkMode.ahk), and is intended as the target of an [`#Include`](https://www.autohotkey.com/docs/v2/lib/_Include.htm) directive.
 
-[Ahk2Exe](https://github.com/AutoHotkey/Ahk2Exe)
-\
-[Upx](https://github.com/upx/upx)
-\
-[Compile-in-ator (Optional)](https://github.com/Git-Pikakid98/Compile-in-ator)
+If you're confused, an example script is provided, which can be ran as-is or can be compiled.
 
-ADDITIONAL requirements if you decide to use my very own Compile-in-ator
+## Requirements for compiling the example script
 
-# Environment Variables (REQUIRED!!)
-`%AHK%` Should be set to your AutoHotkey path. An example `C:\Users\username\AutoHotkey` (Make sure you aren't using a subdirectory)
+* [Ahk2Exe](https://github.com/AutoHotkey/Ahk2Exe)
+* [Upx](https://github.com/upx/upx)
+
+#### Additional requirement if [Compile-in-ator](https://github.com/pikakid98/Compile-in-ator) is used for compiling the example script
+
+* An environment variable named `AHK` set to your AutoHotkey path; e.g. `C:\Program Files\AutoHotkey\v2`
